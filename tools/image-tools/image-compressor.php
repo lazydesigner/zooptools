@@ -2,6 +2,9 @@
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+$title = 'Best Online Image Compressor';
+$description = 'Zooptools is the best tool to compress images with ultimate optimization in JPEG, PNG and WEBP formats. Image Compressor Online.';
+
 ob_start() ?>
 <style>
     .image-container {
@@ -128,6 +131,52 @@ ob_start(); ?>
         <a id="download-btn" style="display:none;" download>Download Compressed Image</a>
     </div>
 
+</div>
+<div class='container'>
+<h2>Supercharge Your Website Speed with Zooptools Image Compression Tools</h2>
+<p>Is your website moving at a snail's pace? The issue could be your image files. Slow-loading images can annoy your visitors and lower your search engine performance as well.</p>
+<p>The answer lies in image compression tools, as your weapons are (for the rest) lightning website performance. These tools can shrink the uploaded file size by nearly 80% without taking away the visual quality, thus they are crucial for:</p>
+
+<ul>
+    <li>Bloggers aiming for a smooth reading process.</li>
+    <li>Owners enhancing the customer service experience.    </li>
+    <li>Web developers speeding up the process for clients.</li>
+</ul>
+<p>To find out what are the best image compression tools follow us:</p>
+<ul>
+    <li>Use intelligent compression algorithms correctly.</li>
+    <li>Process many images in bulk using a computer for utmost efficiency.</li>
+    <li>Provide a faster, more pleasant user experience.</li>
+</ul>
+
+<h2>Is It Safe to Compress Images?</h2>
+<p>Yes, definitely! With our free image compression service, your original files remain as they are in your system, allowing you to be confident that reverting them back to the original form is always possible. Furthermore, our secured, automated system makes sure that all uploaded data will be wiped out within 24 hours, so no one can invade your private space or get some security issue with your data. Compress without fear of data loss due to the secure deletion of your files. Compress with confidence!</p>
+
+<!-- <div>
+    <p><strong>Tags-</strong></p>
+    <span>lossy compression</span>
+    <span>image quality</span>
+    <span>lossless compression</span>
+    <span>large image</span>
+    <span>image optimization tool</span>
+    <span>online image optimizer</span>
+    <span>image compressor</span>
+    <span>straight forward resizer</span>
+    <span>online image optimizer tool</span>
+    <span>optimal website performance</span>
+    <span>original file size</span>
+    <span>online compressor</span>
+    <span>large file</span>
+    <span>picture compressor</span>
+    <span>compress image</span>
+    <span>image compression</span>
+    <span>compress photo image</span>
+    <span>photo compressor</span>
+    <span>compress pictures</span>
+    <span>image optimizer</span>
+    <span>Multitple images compressor</span>
+    <span>bulk resizer</span>
+</div> -->
 </div>
 
 

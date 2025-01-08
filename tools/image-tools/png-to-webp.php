@@ -3,6 +3,9 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
+$title = 'Convert PNG to WEBP Online - Free & Easy PNG to WEBP Converter';
+$description = 'Use our Free Online Bulk Image Converter PNG images to WEBP format with proper compression methods. Zooptools also have other converter tools. Try them now.';
+
 $style = '';
 
 ob_start();
@@ -13,6 +16,8 @@ ob_start();
      const validImageTypes = ['image/png'];
 </script>
 <?php
+$one = 'PNG';
+$two = 'WEBP';
 $accept_image_type = 'image/png';
 
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/components/drag-and-drop.php')

@@ -21,6 +21,10 @@ $bold = '<svg xmlns="http://www.w3.org/2000/svg" style="width:20px" viewBox="0 0
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+
+    $title ='Watermark your image with your logo';
+
+
 ob_start();
 ?>
 
@@ -33,7 +37,8 @@ ob_start();
     }
 
     .outer-upload-container {
-        width: 500px;
+        width: 600px;
+        text-align:center
     }
 
     .upload-container {
@@ -109,8 +114,8 @@ ob_start();
     </style>
     <div class="zooptools_conversion" id="zooptools_conversion">
         <div class="image-container">
-        <h1>Add Watermark to Images For Free- Best Online Watermarking Tool</h1>
             <div class="outer-upload-container">
+            <h1>Add Watermark to Images For Free- Best Online Watermarking Tool</h1>
                 <div class="upload-container" id="drag-and_drop_image">
                     <div class="drop-area">
                         <div class="drop-text">
@@ -198,6 +203,19 @@ ob_start();
         </div>
     </div>
 </div>
+<div class="container">
+        <p >Easily protect and increase the significance of your visual content in a few steps. Watermarking of Zooptools offers the image tool which lets you personalize the watermarked content by adding text, logos, or shapes to your photos, thus ensuring that they remain yours alone.</p>
+    <h2 >What is the Purpose of Watermarking?</h2>
+    <p >Watermarks safeguard your intellectual property, act as a warning against unauthorized use, and are a promotional tool for your brand. The act of adding a watermark to your image adds a professional touch to your visuals and simultaneously affirms your rights.</p>
+
+    <h3 >Characteristics:</h3>
+    <ul>
+        <li>Customizable Watermarks: You can put your text, logo, or shape where you want to and customize the size, transparency, color, and placement of the watermarks. </li>
+        <li>Convenience: You can insert your image directly, or through the URL, Dropbox, or Google Drive.</li>
+        <li>Freedom: You can be made by free drawing, element merging, or saved as PDFs if you need them.</li>
+        <li>Versatile Formats: Your watermarked image will be available to download in different formats, such as JPG, PNG, or SVG.</li>
+    </ul>
+        </div> 
 <?php
 $tool_container = ob_get_clean();
 ob_start();

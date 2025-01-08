@@ -3,19 +3,9 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Color Extractor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            text-align: center;
-        }
+ob_start();
+?> 
+    <style> 
         input[type="text"] {
             width: 70%;
             padding: 10px;
@@ -44,14 +34,27 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
             font-size: 12px;
         }
     </style>
-</head>
-<body>
+<style>
+    .image-container {
+        width: 100%;
+        min-height: 85vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .outer-upload-container {
+        width: 500px;
+    }
+</style> 
+
+<div class="image-container">
+    <div class="outer-upload-container" id="outer-upload" style='text-align:center'>
     <h1>Website Color Extractor</h1>
     <p>Enter a website URL to extract all the colors used:</p>
     <input type="text" id="websiteUrl" placeholder="Enter website URL (e.g., https://example.com)">
     <button id="extractColors">Extract Colors</button>
-
-    <div class="color-grid" id="colorGrid"></div>
+</div></div>
+<div class="color-grid" id="colorGrid"></div>
 
     <script>
         document.getElementById('extractColors').addEventListener('click', async () => {
@@ -72,12 +75,37 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
                     throw new Error('Failed to fetch colors. Please check the URL.');
                 }
 
+                function getUniqueColors(colorArray) {
+    // Normalize all colors to lowercase hex format
+    const normalizedColors = colorArray.map(color => {
+        // Check for named colors and convert them to hex, if necessary
+        if (color === 'red') return '#FF0000';
+        if (color === 'blue') return '#0000FF';
+        if (color === 'green') return '#008000';
+        if (color === 'white') return '#FFFFFF';
+        if (color === 'black') return '#000000';
+        if (color === 'gray') return '#808080';
+        if (color === 'yellow') return '#FFFF00';
+        if (color === 'cyan') return '#00FFFF';
+        if (color === 'orange') return '#FFA500';
+        // Add any other color names if needed
+
+        // Return the color as-is if it’s already a hex or rgba string
+        return color.toLowerCase();
+    });
+
+    // Remove duplicates by converting to a Set and back to an array
+    const uniqueColors = [...new Set(normalizedColors)];
+
+    return uniqueColors;
+}
+
                 const colors = await response.json();
-                console.log(colors)
+                
                 const colorGrid = document.getElementById('colorGrid');
                 colorGrid.innerHTML = ''; // Clear previous results
-
-                colors.forEach(color => {
+                const uniqueColors = getUniqueColors(colors);
+                uniqueColors.forEach(color => {
                     const colorBox = document.createElement('div');
                     colorBox.className = 'color-box';
                     colorBox.style.backgroundColor = color;
@@ -89,6 +117,13 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
                 alert('An error occurred while extracting colors.');
             }
         });
-    </script>
-</body>
-</html>
+    </script> 
+<?php $tool_container = ob_get_clean(); 
+
+
+?>
+<?php
+include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/inc/base.php')
+    ? $_SERVER['DOCUMENT_ROOT'] . '/inc/base.php'
+    : $_SERVER['DOCUMENT_ROOT'] . '/zoop/inc/base.php';
+?>

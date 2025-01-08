@@ -9,7 +9,7 @@ ob_start(); ?>
     }
 
     .outer-upload-container {
-        width: 500px;
+        width: 600px;
     }
 
     .upload-container {
@@ -88,7 +88,7 @@ $style = ob_get_clean();
 
 <div class="image-container">
     <div class="outer-upload-container">
-        <h1 style="text-align: center;">Convert Your Image</h1>
+        <h1 style="text-align: center;">Free online <?=$one ?> to <?=$two ?> Converter</h1>
         <div class="upload-container" id="drag-and_drop_image">
             <div class="drop-area">
                 <div class="drop-text">

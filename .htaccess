@@ -40,7 +40,7 @@ RewriteRule ^resize-image$ tools/image-tools/image-resize.php [NC,L]
 # Image Tools Url
 
 #Other Tools URL
-RewriteRule ^extract-content$ tools/other-tools/extract-content.php [NC,L]
+RewriteRule ^extract-text$ tools/other-tools/extract-content.php [NC,L]
 RewriteRule ^extract-images$ tools/other-tools/extract-images.php [NC,L]
 RewriteRule ^resume-builder$ tools/other-tools/rusume-builder.php [NC,L]
 RewriteRule ^extract-color$ tools/other-tools/color-extract.php [NC,L]

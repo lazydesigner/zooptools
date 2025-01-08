@@ -35,27 +35,27 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     <!-- Open Graph Tags: Optimizes content for social sharing -->
     <meta property="og:title" content="<?php echo $title ?? 'Best Tool Website to make your life easy' ?>">
     <meta property="og:description" content="<?php echo $description ?? 'Find Out Latest Tools that will make your life easy. All kind of  tools are available for you day to day life' ?>">
-    <meta property="og:image" content="https://www.example.com/images/pet-insurance.jpg">
+    <meta property="og:image" content="https://zooptools.com/assets/images/logo.png">
     <meta property="og:url" content="<?= base_url() ?>">
     <meta property="og:type" content="article">
 
     <!-- Twitter Card Tags: Optimizes content for Twitter -->
     <meta name="twitter:title" content="<?php echo $title ?? 'Best Tool Website to make your life easy' ?>">
     <meta name="twitter:description" content="<?php echo $description ?? 'Find Out Latest Tools that will make your life easy. All kind of  tools are available for you day to day life' ?>">
-    <meta name="twitter:image" content="https://www.example.com/images/pet-insurance.jpg">
+    <meta name="twitter:image" content="https://zooptools.com/assets/images/logo.png">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Favicon: Adds a small icon in browser tab -->
-    <link rel="icon" href="https://zooptools.com/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= base_url() ?>assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/base.css">
     <!-- Structured Data: JSON-LD for rich snippets (schema markup) -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Best Pet Insurance Plans for 2025",
+            "name": "Best Tool Website to make your life easy",
             "description": "Find Out Latest Tools that will make your life easy. All kind of  tools are available for you day to day life",
-            "url": "<?= base_url() ?>"
+            "url": "https://zooptools.com"
         }
     </script>
 

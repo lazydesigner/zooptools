@@ -2,6 +2,11 @@
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+
+$title = 'Free Image Cropper – Crop Images Online in Seconds | Zooptools';
+$description = 'Smoothly crop images online with Zooptools free image cropper. Quickly adjust images to perfect size and aspect ratio. Try Now!';
+
+
 ob_start() ?>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
 <style>
@@ -27,7 +32,7 @@ ob_start() ?>
     }
 
     .outer-upload-container {
-        width: 500px;
+        width: 600px;
     }
 
     .upload-container {
@@ -87,10 +92,11 @@ ob_start();
 
 <div class="zooptools_crop">
     <div class="main">
-    <h1 style="text-align: center;">Free image cropper: Easily crop images online</h1>
-    <p style="text-align: center;font-size:small;margin:-20px 0">Smoothly crop images online with Zooptools free image cropper for stunning, quality visuals.</p>
+    
     <div class="image-container">
     <div class="outer-upload-container">
+    <h1 style="text-align: center;">Free image cropper: Easily crop images online</h1>
+    <p style="text-align: center;font-size:small;">Smoothly crop images online with Zooptools free image cropper for stunning, quality visuals.</p>
         <div class="upload-container"  id="drag-and_drop_image">
             <div class="drop-area">
                 <div class="drop-text">
@@ -149,7 +155,17 @@ ob_start();
     </div>
 
 </div>
+<div class="container">
+        
 
+
+<h2>Crop Images Online – Free, Fast, and Easy with ZoopTools</h2>
+<p>With ZoopTools crop image tool that is available online, you can make your visuals be great. Whether you need to post your images on social media, your website, or your client's projects. Our tool gives you precise cutting in a few steps. It's easy and within reach because it is compatible with any browser. You can easily download cropped images without being saved on our database. </p>
+<p><b>Customized Crops:</b>  Select default settings (e.g., 1:1, 16:9 or 4:3) or set up preferential ratios as per your demands.</p>
+<p><b>Cut Out Shapes:</b> Not just the usual rectangles! Display the unique figures of your shots by trying alternate shapes such as circles, hearts, or stars</p>
+<p><b>Freehand Options:</b> Access our free-handed tool where you can pick the specific areas yourself as you wish consequently you have the best customization mode you can ever find.</p>
+<p><b>Platform-Presets:</b> Effortlessly adjust your images for Instagram, Facebook, YouTube, and other channels by using the predefined size recommendations.</p>
+    </div> 
 <?php
 $tool_container = ob_get_clean(); 
 ob_start();
