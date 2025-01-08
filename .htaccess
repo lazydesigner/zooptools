@@ -1,0 +1,108 @@
+# Enable mod_rewrite for URL rewriting
+RewriteEngine On
+
+# Redirect non-www to www (optional, choose based on your preference)
+#RewriteCond %{HTTP_HOST} ^www.zooptools.com [NC]
+#RewriteRule ^(.*)$ https://zooptools.com/$1 [L,R=301]
+
+# Redirect HTTP to HTTPS (recommended for security)
+#RewriteCond %{HTTPS} off
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect URLs with trailing slashes to non-trailing slashes
+# RewriteCond %{REQUEST_URI} /$
+# RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_URI} (.+)/$
+	RewriteRule ^ %1 [L,R=301]
+
+
+# Prevent directory listing (security)
+Options -Indexes
+
+
+RewriteRule ^$ pages/home.php [NC,L]
+RewriteRule ^about$ pages/about.php [NC,L]
+
+# Image Tools Url
+RewriteRule ^png-to-jpg$ tools/image-tools/png-to-jpg.php [NC,L]
+RewriteRule ^png-to-webp$ tools/image-tools/png-to-webp.php [NC,L]
+RewriteRule ^jpg-to-png$ tools/image-tools/jpg-to-png.php [NC,L]
+RewriteRule ^jpg-to-webp$ tools/image-tools/jpg-to-webp.php [NC,L]
+RewriteRule ^webp-to-jpg$ tools/image-tools/webp-to-jpg.php [NC,L]
+RewriteRule ^webp-to-png$ tools/image-tools/webp-to-png.php [NC,L]
+RewriteRule ^flip-image$ tools/image-tools/flip-image.php [NC,L]
+RewriteRule ^image-compressor$ tools/image-tools/image-compressor.php [NC,L]
+RewriteRule ^crop-image$ tools/image-tools/crop-image.php [NC,L]
+RewriteRule ^watermark-image$ tools/image-tools/watermark-image.php [NC,L] 
+RewriteRule ^resize-image$ tools/image-tools/image-resize.php [NC,L] 
+# Image Tools Url
+
+#Other Tools URL
+RewriteRule ^extract-content$ tools/other-tools/extract-content.php [NC,L]
+RewriteRule ^extract-images$ tools/other-tools/extract-images.php [NC,L]
+RewriteRule ^resume-builder$ tools/other-tools/rusume-builder.php [NC,L]
+RewriteRule ^extract-color$ tools/other-tools/color-extract.php [NC,L]
+RewriteRule ^whats-my-ip$ tools/other-tools/whats-my-ip.php [NC,L]
+#Other Tools URL
+
+#Calculator Tools URL
+RewriteRule ^fake-tweet-generator$ tools/generator-tools/tweet-generator.php [NC,L]
+RewriteRule ^ppf-calculator$ tools/calculator-tools/ppf-calculator.php [NC,L]
+RewriteRule ^sip-calculator$ tools/calculator-tools/sip-calculator.php [NC,L]
+RewriteRule ^compound-interest-calculator$ tools/calculator-tools/ci-calculator.php [NC,L]
+#Calculator Tools URL
+
+
+
+#Backend Urls '+from_+'-to-'+to_+'/download/'+data["u"]+'
+RewriteRule ^extraction$ backend/othertask/content-download.php [NC,L]
+RewriteRule ^extractcolor$ backend/extractcolor.php [NC,L]
+RewriteRule ^crop-process$ backend/imagetask/crop-image.php [NC,L]
+RewriteRule ^flipimage$ backend/imagetask/flip-image.php [NC,L]
+RewriteRule ^resize-image-process$ backend/imagetask/resize-image.php [NC,L]
+RewriteRule ^convert-image$ backend/imagetask/image-conversion.php [NC,L]
+RewriteRule ^([a-z]+)-to-([a-z]+)/download/([a-z0-9]+)$ backend/download-page.php?from=$1&to=$2&id=$3 [NC,L]
+RewriteRule ^([a-z0-9-]+)/download/([a-z0-9]+)$ backend/download-page.php?crop=$1&id=$2 [NC,L]
+RewriteRule ^download/([a-z0-9_]+)$ backend/downloads.php?filename=$1 [NC,L]
+#Backend Urls
+
+# Handle custom error pages (404, 500, etc.)
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Enable compression (gzip) for text, CSS, and JavaScript files
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Cache control (caching static assets for better performance)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Restrict access to .htaccess and sensitive files
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Block access to certain file types
+<FilesMatch "\.(env|ini|bak|sql|log)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Enable cross-origin resource sharing (CORS) for specific domains
+#Header set Access-Control-Allow-Origin "https://zooptools.com"
