@@ -4,15 +4,15 @@
     <div class="footer-column">
       <h3>Image Tools</h3>
       <ul>
-        <li><a href="https://zooptools.com/crop-image">Image Cropper</a></li>
-        <li><a href="https://zooptools.com/png-to-jpg">png - jpg Converter</a></li>
-        <li><a href="https://zooptools.com/jpg-to-png">jpg - png Converter</a></li>
-        <li><a href="https://zooptools.com/jpg-to-webp">jpg - webp Converter</a></li>
-        <li><a href="https://zooptools.com/png-to-webp">png - webp Converter</a></li>
+        <li><a href="https://zooptools.com/png-to-jpg">PNG - JPG</a></li>
+        <li><a href="https://zooptools.com/jpg-to-png">JPG - PNG</a></li>
+        <li><a href="https://zooptools.com/jpg-to-webp">JPG - WEBP</a></li>
+        <li><a href="https://zooptools.com/png-to-webp">PNG - WEBP</a></li>
+        <li><a href="https://zooptools.com/webp-to-jpg">WEBP - JPG</a></li>
+        <li><a href="https://zooptools.com/webp-to-png">WEBP - PNG</a></li>
         <li><a href="https://zooptools.com/image-compressor">Image Compressor</a></li>
-        <li><a href="https://zooptools.com/webp-to-jpg">webp - jpg Converter</a></li>
-        <li><a href="https://zooptools.com/webp-to-png">webp - png Converter</a></li>
         <li><a href="https://zooptools.com/watermark-image">Watermark Image</a></li>
+        <li><a href="https://zooptools.com/crop-image">Image Cropper</a></li>
         <li><a href="https://zooptools.com/resize-image">Resize Image</a></li>
       </ul>
     </div>
@@ -21,13 +21,17 @@
     <div class="footer-column">
       <h3>Other Tools</h3>
       <ul style="text-transform:capitalize">
-        <li><a href="https://zooptools.com/extract-text">Extract Content</a></li>
-        <li><a href="https://zooptools.com/extract-images">Extract Image</a></li>
+        <li><a href="https://zooptools.com/web-content-extractor">Web Content Extractor</a></li>
+        <li><a href="https://zooptools.com/website-image-extractor">Website Image Extractor</a></li>
         <li><a href="https://zooptools.com/sip-calculator">SIP Calculator</a></li>
         <li><a href="https://zooptools.com/fake-tweet-generator">Tweet Generator</a></li>
         <li><a href="https://zooptools.com/resume-builder">Resume Builder</a></li>
         <li><a href="https://zooptools.com/compound-interest-calculator">CI Calculator</a></li>
         <li><a href="https://zooptools.com/ppf-calculator">PPF Calculator</a></li>
+        <li><a href="https://zooptools.com/whats-my-ip">Whats My IP</a></li>
+        <li><a href="https://zooptools.com/bulk-url-opner">Bulk Url Opner</a></li>
+        <li><a href="https://zooptools.com/url-list-cleaner">Url List Cleaner</a></li>
+        <li><a href="https://zooptools.com/word-counter">Word Counter</a></li>
       </ul>
     </div>
 
@@ -35,9 +39,9 @@
     <div class="footer-column">
       <h3>Other Pages</h3>
       <ul>
-        <li><a href="/about-us">About Us</a></li>
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
-        <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+        <li><a href="<?=base_url() ?>about-us">About Us</a></li>
+        <li><a href="<?=base_url() ?>privacy-policy">Privacy Policy</a></li>
+        <li><a href="<?=base_url() ?>terms-and-conditions">Terms & Conditions</a></li>
         <!--<li><a href="/faq">FAQ</a></li>-->
       </ul>
     </div>

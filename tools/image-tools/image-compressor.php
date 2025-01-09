@@ -4,6 +4,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 $title = 'Best Online Image Compressor';
 $description = 'Zooptools is the best tool to compress images with ultimate optimization in JPEG, PNG and WEBP formats. Image Compressor Online.';
+$canonical = 'image-compressor';
 
 ob_start() ?>
 <style>

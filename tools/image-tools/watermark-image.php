@@ -22,7 +22,9 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
-    $title ='Watermark your image with your logo';
+    $title ='Free online Watermarking Tool | Zooptools';
+    $description = 'Our Free Watermarking Tool personalize your content by adding text, logos, or shapes to your photos. Try it now.';
+    $canonical = 'watermark-image';
 
 
 ob_start();
@@ -116,6 +118,7 @@ ob_start();
         <div class="image-container">
             <div class="outer-upload-container">
             <h1>Add Watermark to Images For Free- Best Online Watermarking Tool</h1>
+            <p>Easily protect and increase the significance of your visual content in a few steps. Watermarking of Zooptools offers the image tool which lets you personalize the watermarked content by adding text, logos, or shapes to your photos, thus ensuring that they remain yours alone.</p>
                 <div class="upload-container" id="drag-and_drop_image">
                     <div class="drop-area">
                         <div class="drop-text">
@@ -204,7 +207,7 @@ ob_start();
     </div>
 </div>
 <div class="container">
-        <p >Easily protect and increase the significance of your visual content in a few steps. Watermarking of Zooptools offers the image tool which lets you personalize the watermarked content by adding text, logos, or shapes to your photos, thus ensuring that they remain yours alone.</p>
+        <!-- <p >Easily protect and increase the significance of your visual content in a few steps. Watermarking of Zooptools offers the image tool which lets you personalize the watermarked content by adding text, logos, or shapes to your photos, thus ensuring that they remain yours alone.</p> -->
     <h2 >What is the Purpose of Watermarking?</h2>
     <p >Watermarks safeguard your intellectual property, act as a warning against unauthorized use, and are a promotional tool for your brand. The act of adding a watermark to your image adds a professional touch to your visuals and simultaneously affirms your rights.</p>
 

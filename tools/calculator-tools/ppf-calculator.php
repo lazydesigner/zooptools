@@ -3,6 +3,10 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
+    $title = 'Online PPF Calculator – Public Provident Fund Calculator';
+    $description = 'Use the PPF calculator to estimate the return on your Public Provident Fund investment scheme.';
+    $canonical = 'ppf-calculator';
+
 ob_start(); ?>
 <style>
     .ppf {
@@ -216,6 +220,57 @@ ob_start();
       </table>
     </div>
   </div>
+</div>
+
+<div class="container">
+    <h2>The Public Provident Fund (PPF): A Trusted Investment Scheme</h2>
+    <p>The Public Provident Fund (PPF), a savings scheme launched by the Government of India in 1968, and a much-beloved eternity one of them, is aimed at promoting long-term investments. Scenario allowed to both young and old (age limit dependent on the bank) offer the interest-earning accounts with the least to a whopping Rs. 500 per year deposit. </p>
+    <p>PPF with a lock-in period of 15 years, provides guaranteed, risk-free returns, concessional interest rates, which the government has monthly review and revise. Relatedly, the process is a great way of tax planning and as such, has become the second most common process for retirements.</p>
+
+    <img src="<?=base_url() ?>assets/images/ppf-formula.png" width="250px" alt="">
+
+    <h2>How to calculate PPF returns?</h2>
+    <p>Finding the PPF returns of an investment can be achieved by using the following formula:</p>
+    <p>Where:    </p>
+    <ul>
+        <li>FV = Future value or maturity value of the investment</li>
+        <li>P = Annual installments</li>
+        <li>n = The number of years the investment is made for</li>
+        <li>r = The annual interest rate</li>
+    </ul>
+
+    <h2>How the PPF Interest Calculator Works?</h2>
+    <p>PPF Calculator is the easiest tool for the estimation of your Public Provident Fund investments. Here is a step-by-step guide teaching one on how to effectively use the tool:</p>
+    <p><b>Deposit Frequency:</b> You can choose the deposit frequency that fits your plans best, i.e., monthly, quarterly, semi-annually, or annually. The frequency you set will have a significant effect on the maturity value; thus, monthly deposits are the best for salaried people who search for accurate results.</p>
+    <p><b>Investment Amount:</b> Clearly define the total of your PPF account that you are ready and want to put. (a) The amount you invest annually should be limited to ₹1.5 lakh or ₹12,500 per month only.</p>
+    <p><b>Investment Period:</b> You should select the period during which you plan to invest. The shortest period is 15 years; however, you may increase it by five more years, once the first period ends. The calculator works on the assumption that you will deposit the same amount throughout the term.
+    </p>
+    <p><b>Future Value:</b> Once you key in all that is required, the calculator will automatically show the maturity value of your investment. This number is the total payment you will receive on your investment by the end of the term along with the earned interest.</p>
+    <p>These steps will help you easily calculate how fast your PPF investment will grow and subsequently plan well for the necessary financial goal. The calculator is quick and accurate, thus it will aid you to remain consistent with your long-term savings plan.</p>
+    <h2>Facts About PPF</h2>
+    <ul>
+        <li>Current interest rate : 7.10%</li>
+        <li>Duration of scheme : 15 years</li>
+        <li>Minimum deposit amount (per year) :  500</li>
+        <li>Maximum deposit amount (per year) :  1,50,000</li>
+        <li>Number of installments every year : 1 (Min) to 12 (Max)</li>
+        <li>Number of accounts one can open : Only One</li>
+        <li>Lock-in period : 15 years (partial withdrawals can be made from the sixth year)        </li>
+        <li>Extension of PPF Account : After the maturity period (15 years), it can be extended for a period of 5 years</li>
+        <li>Tax savings (contribution) : under section 80C (upto 1.5 L)</li>
+        <li>Tax savings (interest earned and final amount) : fully exempted from wealth tax</li>
+    </ul>
+
+    <h2>Advantages of Using Zooptools’ PPF Calculator</h2>
+    <p><b>User-Friendly:</b> The application is simple to use and thus possible for everyone to access.</p>
+    <p><b>Shows Yearly Returns:</b> It aggregates the returns based on the amounts annually, so the concept of returns is getting simplified.</p>
+    <p><b>Tracks Total Investment:</b> An investor can see the cash flows of the portfolio.</p>
+    <p><b>Supports Tax Planning:</b> The calculator helps you by giving knowledge of tax-saving benefits from investing in PPF, and thus providing a way to better planning.</p>
+    <p><b>Estimates Interest Earned:</b> The interest calculator will inform you of the amount of interest you will gain and thereby show the benefit of your investment.</p>
+    <p><b>Helps Adjust Investment Plans:</b> If the returns are short of the target, the solution is easy as you can now select the needed amount of your investment by doing simple calculations.</p>
+    <p><b>Displays Total Interest and Maturity Value:</b> The calculator demonstrates the total interest earned and your maturity amount afterwards.</p>
+    <p>The Zooptools PPF calculator is a “strong and powerful support device” for your PPF investments and their easy management and efficiency track.</p>
+
 </div>
 
 <?php $tool_container = ob_get_clean();

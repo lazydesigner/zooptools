@@ -23,7 +23,9 @@ Options -Indexes
 
 
 RewriteRule ^$ pages/home.php [NC,L]
-RewriteRule ^about$ pages/about.php [NC,L]
+RewriteRule ^about-us$ pages/about.php [NC,L]
+RewriteRule ^privacy-policy$ pages/privacy-policy.php [NC,L]
+RewriteRule ^terms-and-conditions$ pages/terms-and-condition.php [NC,L]
 
 # Image Tools Url
 RewriteRule ^png-to-jpg$ tools/image-tools/png-to-jpg.php [NC,L]
@@ -40,11 +42,14 @@ RewriteRule ^resize-image$ tools/image-tools/image-resize.php [NC,L]
 # Image Tools Url
 
 #Other Tools URL
-RewriteRule ^extract-text$ tools/other-tools/extract-content.php [NC,L]
-RewriteRule ^extract-images$ tools/other-tools/extract-images.php [NC,L]
+RewriteRule ^web-content-extractor$ tools/other-tools/extract-content.php [NC,L]
+RewriteRule ^website-image-extractor$ tools/other-tools/extract-images.php [NC,L]
 RewriteRule ^resume-builder$ tools/other-tools/rusume-builder.php [NC,L]
 RewriteRule ^extract-color$ tools/other-tools/color-extract.php [NC,L]
 RewriteRule ^whats-my-ip$ tools/other-tools/whats-my-ip.php [NC,L]
+RewriteRule ^bulk-url-opner$ tools/other-tools/bulk-url-opner.php [NC,L]
+RewriteRule ^url-list-cleaner$ tools/other-tools/url-list-cleaner.php [NC,L]
+RewriteRule ^word-counter$ tools/other-tools/word-counter.php [NC,L]
 #Other Tools URL
 
 #Calculator Tools URL
@@ -91,6 +96,11 @@ ErrorDocument 500 /500.html
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
 
 # Restrict access to .htaccess and sensitive files
 <Files .htaccess>

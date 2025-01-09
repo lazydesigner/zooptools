@@ -2,6 +2,7 @@
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+$canonical = 'compound-interest-calculator';
 ob_start(); ?>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->

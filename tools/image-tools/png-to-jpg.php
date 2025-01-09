@@ -3,9 +3,10 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
-$title = 'Convert PNG to JPEG Online - Free & Easy PNG to JPG Converter';
+$title = 'Convert PNG to JPG Online - Free & Easy PNG to JPG Converter';
 $description = 'Use our Free Online Bulk Image Converter PNG images to JPG format with proper compression methods. Zooptools also have other converter tools. Try them now.';
 $style = '';
+$canonical  = 'png-to-jpg';
 
 ob_start();
 ?>

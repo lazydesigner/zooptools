@@ -2,6 +2,7 @@
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+$canonical = 'fake-tweet-generator';
 ob_start(); ?>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

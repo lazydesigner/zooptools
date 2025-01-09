@@ -3,6 +3,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
+$canonical = 'website-image-extractor';
 $style = '';
 
 ob_start();

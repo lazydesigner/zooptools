@@ -839,8 +839,22 @@ a {
     display: none;
 }
 
-@media (max-width:600px) {
 
+.image-container {
+    width: 100%;
+    min-height: 85vh;
+    display: grid;
+    place-items: center;
+}
+
+.outer-upload-container {
+    width: 600px;
+}
+
+@media (max-width:600px) {
+    .outer-upload-container {
+        width: 100%;
+    }
     .togglemenu,
     .logo {
         width: 50%;

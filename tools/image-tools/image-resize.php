@@ -2,6 +2,7 @@
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+    $canonical = 'resize-image';
 ob_start(); ?>
 <style>
     .image-container {

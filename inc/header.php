@@ -25,11 +25,15 @@
                 <div class="nav-link"><a href="<?= base_url('crop-image') ?>">Crop Image</a></div>
                 <div class=" nav-link"><a>More <?= $arrow ?></a>
                     <div class="dropdown">
-                        <a href="<?= base_url('extract-text') ?>">Extract Content</a>
-                        <a href="<?= base_url('extract-images') ?>">Extract Image</a>
+                        <a href="<?= base_url('web-content-extractor') ?>">Web Content Extractor</a>
+                        <a href="<?= base_url('website-image-extractor') ?>">Website Image Extractor</a>
                         <a href="<?= base_url('watermark-image') ?>">Watermark Image</a> 
                         <a href="<?= base_url() ?>resize-image">Resize Image</a>
                         <a href="<?= base_url() ?>flip-image">Flip Image</a>
+                        <a href="<?= base_url() ?>whats-my-ip">Whats My IP</a>
+                        <a href="<?= base_url() ?>bulk-url-opner">Bulk Url Opner</a>
+                        <a href="<?= base_url() ?>url-list-cleaner">Url List Cleaner</a>
+                        <a href="<?= base_url() ?>word-counter">Word Counter</a>
                     </div>
                 </div>
                 <!--<div class="nav-link light" id="theme-toggle" onclick="toggleTheme()"><a><?= $light ?></a></div>-->

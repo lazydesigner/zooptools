@@ -54,7 +54,7 @@ if (isLocalhost()) {
     
         $url = $protocol . $host . $basePath;
     
-        return $url.'playground/' . ltrim($path, '/');
+        return $url . ltrim($path, '/');
     }
 }
 
