@@ -25,6 +25,7 @@
         <li><a href="https://zooptools.com/website-image-extractor">Website Image Extractor</a></li>
         <li><a href="https://zooptools.com/sip-calculator">SIP Calculator</a></li>
         <li><a href="https://zooptools.com/fake-tweet-generator">Tweet Generator</a></li>
+        <li><a href="https://zooptools.com/dummy-content-generator">Content Generator</a></li>
         <li><a href="https://zooptools.com/resume-builder">Resume Builder</a></li>
         <li><a href="https://zooptools.com/compound-interest-calculator">CI Calculator</a></li>
         <li><a href="https://zooptools.com/ppf-calculator">PPF Calculator</a></li>

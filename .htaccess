@@ -40,7 +40,6 @@ RewriteRule ^image-compressor$ tools/image-tools/image-compressor.php [NC,L]
 RewriteRule ^crop-image$ tools/image-tools/crop-image.php [NC,L]
 RewriteRule ^watermark-image$ tools/image-tools/watermark-image.php [NC,L] 
 RewriteRule ^resize-image$ tools/image-tools/image-resize.php [NC,L] 
-RewriteRule ^gio-tagging$ tools/image-tools/giotagging.php [NC,L] 
 # Image Tools Url
 
 #Other Tools URL
@@ -56,6 +55,7 @@ RewriteRule ^word-counter$ tools/other-tools/word-counter.php [NC,L]
 
 #Calculator Tools URL
 RewriteRule ^fake-tweet-generator$ tools/generator-tools/tweet-generator.php [NC,L]
+RewriteRule ^dummy-content-generator$ tools/generator-tools/dummy-content-generator.php [NC,L] 
 RewriteRule ^ppf-calculator$ tools/calculator-tools/ppf-calculator.php [NC,L]
 RewriteRule ^sip-calculator$ tools/calculator-tools/sip-calculator.php [NC,L]
 RewriteRule ^compound-interest-calculator$ tools/calculator-tools/ci-calculator.php [NC,L]

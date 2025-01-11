@@ -3,9 +3,9 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
-$title = 'Convert JPG to  WEBP Online - Free & Easy JPG to WEBP Converter';
-$description = 'Using our Free Online JPG to WEBP Converter, you can minimize your load, in terms of space, time, and efforts.';
-$canonical = 'jpg-to-webp';
+$title = 'Lorem Ipsum: Dummy Content Generator - Zooptools';
+$description = 'Generate dummy content for your website';
+$canonical = 'dummy-content-generator';
 
 $style = '';
 
@@ -23,41 +23,53 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea, form button {
+form input, form textarea, form button, select {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: 0;
+}
+#contentForm{
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 form button {
-    background: #007bff;
+    background: var(--primary-accent);
     color: #fff;
     cursor: pointer;
 }
 
+::-webkit-inner-spin-button{display: none;}
+::-webkit-outer-spin-button{display: n;}
+
 form button:hover {
-    background: #0056b3;
+    background: var(--primary-accent);
 }
 
 h2 {
     margin-top: 20px;
 }
 
-ul {
+.content-div ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
+.content-div ul li {
     margin: 10px 0;
-    padding: 10px;
-    background: #f1f1f1;
+    padding: 10px; 
     border-radius: 4px;
+}
+.content-div{
+    width: 100%;
+    max-height: 800px;
+    overflow: auto;
 }
 
 </style>
 <div class="container">
-        <h1>Dummy Content Generator</h1>
+        <h1 style="text-align: center;margin:3% 0">Dummy Content Generator</h1>
         <form id="contentForm">
             <label for="type">Generate Content By:</label>
             <select id="type">
@@ -70,7 +82,7 @@ ul li {
             <input type="number" id="count" placeholder="Enter count" min="1" value="1" required>
 
             <label for="length">Paragraph Length (if applicable):</label>
-            <select id="length" disabled>
+            <select id="length">
                 <option value="short">Short</option>
                 <option value="medium">Medium</option>
                 <option value="long">Long</option>
@@ -79,8 +91,10 @@ ul li {
             <button type="submit">Generate</button>
         </form>
 
+        <div class="content-div">
         <h2>Generated Content:</h2>
         <div id="output"></div>
+        </div>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
