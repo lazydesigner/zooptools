@@ -23,16 +23,16 @@
       <ul style="text-transform:capitalize">
         <li><a href="https://zooptools.com/web-content-extractor">Web Content Extractor</a></li>
         <li><a href="https://zooptools.com/website-image-extractor">Website Image Extractor</a></li>
+        <li><a href="https://zooptools.com/word-counter">Word Counter</a></li>
         <li><a href="https://zooptools.com/sip-calculator">SIP Calculator</a></li>
+        <li><a href="https://zooptools.com/compound-interest-calculator">CI Calculator</a></li>
+        <li><a href="https://zooptools.com/ppf-calculator">PPF Calculator</a></li>
         <li><a href="https://zooptools.com/fake-tweet-generator">Tweet Generator</a></li>
         <li><a href="https://zooptools.com/dummy-content-generator">Content Generator</a></li>
         <li><a href="https://zooptools.com/resume-builder">Resume Builder</a></li>
-        <li><a href="https://zooptools.com/compound-interest-calculator">CI Calculator</a></li>
-        <li><a href="https://zooptools.com/ppf-calculator">PPF Calculator</a></li>
         <li><a href="https://zooptools.com/whats-my-ip">Whats My IP</a></li>
         <li><a href="https://zooptools.com/bulk-url-opner">Bulk Url Opner</a></li>
         <li><a href="https://zooptools.com/url-list-cleaner">Url List Cleaner</a></li>
-        <li><a href="https://zooptools.com/word-counter">Word Counter</a></li>
       </ul>
     </div>
 

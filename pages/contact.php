@@ -36,8 +36,7 @@ ob_start();
 
 .details-section {
     background: #ffffff;
-    color: #333;
-    display: flex;
+    color: #333; 
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
@@ -171,17 +170,18 @@ textarea {
 
         <div class="details-section">
             <h2>Get in Touch</h2>
-            <div class="contact-item">
+            <!-- <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <p>1234 Elm Street, Springfield, USA</p>
             </div>
             <div class="contact-item">
                 <i class="fas fa-phone"></i>
                 <p>+1 (555) 123-4567</p>
-            </div>
+            </div> -->
             <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <p>info@example.com</p>
+                <p><b>Email: </b></p>
+                <a href="mailto:info@zooptools.com"><p>info@zooptools.com</p></a>
+                
             </div>
             <div class="social-links">
                 <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
