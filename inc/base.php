@@ -6,7 +6,7 @@ $dark = '<svg xmlns="http://www.w3.org/2000/svg" style="width:20px; " viewBox="0
 
 $mobile = '<svg xmlns="http://www.w3.org/2000/svg" style="width:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path></svg>';
 
- 
+
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
@@ -269,7 +269,8 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
             /* Place main text in front */
         }
     </style>
-    <div class="container">
+    <?php if(!isset($toextra)){ ?> 
+        <div class="container">
         <div class="content-gap" style="padding: 3% 0;">
             <div class="text-container">
                 <h2 class="shadow-text">Why Choose ZoopTools?</h2>
@@ -304,38 +305,38 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
                 </div>
             </div>
         </div>
-        
-    <div class="content-gap" style="padding: 3% 0;">
-        
-        <div class="text-container">
-        <h2 style=" text-align:center;margin-bottom:0" class="shadow-text">How It Works Section</h2>
+
+        <div class="content-gap" style="padding: 3% 0;">
+
+            <div class="text-container">
+                <h2 style=" text-align:center;margin-bottom:0" class="shadow-text">How It Works Section</h2>
                 <span class="main-text">How It Works Section</span>
             </div>
-        <p style="text-align: center;margin:4px">Using ZoopTools is as Easy as 1-2-3!</p>
-        <div class="why-flex">
-            <div class="how-box">
-                <strong style="font-size: 3rem;color:#FF6600">1</strong>
-                <p style="font-size: 1.5rem;margin:0"><strong>Select a Tool</strong></p>
-                <p>Choose from a wide range of free tools.</p>
-            </div>
-            <!-- <div class="how-img">
+            <p style="text-align: center;margin:4px">Using ZoopTools is as Easy as 1-2-3!</p>
+            <div class="why-flex">
+                <div class="how-box">
+                    <strong style="font-size: 3rem;color:#FF6600">1</strong>
+                    <p style="font-size: 1.5rem;margin:0"><strong>Select a Tool</strong></p>
+                    <p>Choose from a wide range of free tools.</p>
+                </div>
+                <!-- <div class="how-img">
                 <img src="<?= base_url('assets/images/right-arrow.png') ?>" width="100%" height="100%" alt="Image Converter Tool"></div> -->
-            <div class="how-box">
-                <strong style="font-size: 3rem;color:#FF6600">2</strong>
-                <p style="font-size: 1.5rem;margin:0"><strong>Upload or Enter Your Data</strong></p>
-                <p>No registration required!</p>
-            </div>
-            <!-- <div class="how-img">
+                <div class="how-box">
+                    <strong style="font-size: 3rem;color:#FF6600">2</strong>
+                    <p style="font-size: 1.5rem;margin:0"><strong>Upload or Enter Your Data</strong></p>
+                    <p>No registration required!</p>
+                </div>
+                <!-- <div class="how-img">
                 <img src="<?= base_url('assets/images/right-arrow.png') ?>" width="100%" height="100%" alt="Image Converter Tool"></div> -->
-            <div class="how-boxx">
-                <strong style="font-size: 3rem;color:#FF6600">3</strong>
-                <p style="font-size: 1.5rem;margin:0"><strong>Get Results Instantly</strong></p>
-                <p>Download, share, or copy your output in seconds.</p>
+                <div class="how-boxx">
+                    <strong style="font-size: 3rem;color:#FF6600">3</strong>
+                    <p style="font-size: 1.5rem;margin:0"><strong>Get Results Instantly</strong></p>
+                    <p>Download, share, or copy your output in seconds.</p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    
+
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">What Our Users Say</h2>
@@ -346,7 +347,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
                 <div class="testimonial-card">
                     <img src="<?= base_url('assets/images/images.jpg') ?>" alt="User Photo" class="user-photo">
                     <p class="user-feedback">"ZoopTools is a real breakthrough! The tools are rapid, energy-saving, and extremely user-friendly itself."</p>
-                    <h4 class="user-name">Emily R.</h4>
+                    <p class="user-name">Emily R.</p>
                     <span class="user-role">Digital Marketer</span>
                 </div>
 
@@ -354,7 +355,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
                 <div class="testimonial-card">
                     <img src="<?= base_url('assets/images/images (1).jpg') ?>" alt="User Photo" class="user-photo">
                     <p class="user-feedback">"I have used several web tools, but ZoopTools is the simplest and most reliable."</p>
-                    <h4 class="user-name">John D.</h4>
+                    <p class="user-name">John D.</p>
                     <span class="user-role">Freelance Designer</span>
                 </div>
 
@@ -362,13 +363,14 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
                 <div class="testimonial-card">
                     <img src="<?= base_url('assets/images/images (2).jpg') ?>" alt="User Photo" class="user-photo">
                     <p class="user-feedback">"This was awesome! ZoopTools has turned out to be a great tool for us working people who need to handle our work quickly and efficiently"</p>
-                    <h4 class="user-name">Sophia L.</h4>
+                    <p class="user-name">Sophia L.</p>
                     <span class="user-role">Content Creator</span>
                 </div>
             </div>
             <!-- <small style="text-align: start;margin-top:1%">Join thousands of users who rely on ZoopTools for fast and secure online tools.</small> -->
         </div>
     </section>
+        <?php } ?>
 
     <?php include 'footer.php'; ?>
     <script>

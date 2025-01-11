@@ -2,7 +2,7 @@
   <div class="footer-container">
     <!-- Tools Related to Images -->
     <div class="footer-column">
-      <h3>Image Tools</h3>
+      <p>Image Tools</p>
       <ul>
         <li><a href="https://zooptools.com/png-to-jpg">PNG - JPG</a></li>
         <li><a href="https://zooptools.com/jpg-to-png">JPG - PNG</a></li>
@@ -19,7 +19,7 @@
 
     <!-- Other Tools -->
     <div class="footer-column">
-      <h3>Other Tools</h3>
+      <p>Other Tools</p>
       <ul style="text-transform:capitalize">
         <li><a href="https://zooptools.com/web-content-extractor">Web Content Extractor</a></li>
         <li><a href="https://zooptools.com/website-image-extractor">Website Image Extractor</a></li>
@@ -37,9 +37,10 @@
 
     <!-- Other Pages -->
     <div class="footer-column">
-      <h3>Other Pages</h3>
+      <p>Other Pages</p>
       <ul>
         <li><a href="<?=base_url() ?>about-us">About Us</a></li>
+        <li><a href="<?=base_url() ?>contact-us">Contact Us</a></li>
         <li><a href="<?=base_url() ?>privacy-policy">Privacy Policy</a></li>
         <li><a href="<?=base_url() ?>terms-and-conditions">Terms & Conditions</a></li>
         <!--<li><a href="/faq">FAQ</a></li>-->
@@ -48,10 +49,10 @@
 
     <!-- Contact Us -->
     <div class="footer-column">
-      <h3>Contact Us</h3>
+      <p>Contact Us</p>
       <ul>
         <li>Email: <a href="mailto:support@zooptols.com">support@zooptools.com</a></li>
-        <li>Phone: <a href="tel:+0000000000">+1 234 567 890</a></li>
+        <!-- <li>Phone: <a href="tel:+0000000000">+1 234 567 890</a></li> -->
         <li>Social Links:</li>
         <ul class="social-links">
           <li><a href="#">Facebook</a></li>

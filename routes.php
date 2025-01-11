@@ -11,11 +11,11 @@ function isLocalhost() {
     // Check if the server's hostname is in the array of localhost values
     return in_array($serverHostname, $localhosts);
 }
-$con = mysqli_connect('localhost', 'root', '', 'zooptools');
-if (!$con) {die('Connection Failed......');}
 
 // Example of how to use the function
 if (isLocalhost()) {
+    $con = mysqli_connect('localhost', 'root', '', 'zooptools');
+    if (!$con) {die('Connection Failed......');}
     function base_url($path = ''){
 
         $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
@@ -40,6 +40,8 @@ if (isLocalhost()) {
         }    
     }
 } else { 
+    $con = mysqli_connect('localhost', 'u231955561_tools', 'ZoopT@@1s', 'u231955561_zoop');
+    if (!$con) {die('Connection Failed......');}
     function base_url($path = '') {
         $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
         $host = $_SERVER['HTTP_HOST'];

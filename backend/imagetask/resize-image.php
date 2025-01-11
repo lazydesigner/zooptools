@@ -1,4 +1,8 @@
 <?php
+
+include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
+? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
+: $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!isset($_FILES['image']) || $_FILES['image']['error'] !== UPLOAD_ERR_OK) {
         echo json_encode(['success' => false, 'error' => 'No image uploaded or upload error.']);

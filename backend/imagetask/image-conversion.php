@@ -1,5 +1,8 @@
 <?php
 
+include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
+? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
+: $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $files = $_FILES['file'];
     $zipFilePath = '';
@@ -64,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $uniqueId = uniqid('zoop');
     $file = basename($zipFilePath);
     $image_count = count($files['name']);
-    $con = mysqli_connect('localhost', 'root', '', 'zooptools');
+    // $con = mysqli_connect('localhost', 'root', '', 'zooptools');
     if ($con) {
         $query = "INSERT INTO image(`converted_image`, `unique_id`, `image_count`) VALUES('$file', '$uniqueId', $image_count)";
         $result = mysqli_query($con, $query);

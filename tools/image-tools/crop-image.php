@@ -97,7 +97,7 @@ ob_start();
     <div class="image-container">
     <div class="outer-upload-container">
     <h1 style="text-align: center;">Free image cropper: Easily crop images online</h1>
-    <p style="text-align: center;font-size:small;">Smoothly crop images online with Zooptools free image cropper for stunning, quality visuals.</p>
+    <p style="text-align: center;font-size:small;">Smoothly crop images online with Zooptools free image cropper for stunning quality visuals.</p>
         <div class="upload-container"  id="drag-and_drop_image">
             <div class="drop-area">
                 <div class="drop-text">

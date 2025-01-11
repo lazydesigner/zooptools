@@ -18,7 +18,7 @@ if(isset($_GET['crop'])){
 
 $a = $_GET['id'];
 
-$con = mysqli_connect('localhost', 'root', '', 'zooptools');
+// $con = mysqli_connect('localhost', 'root', '', 'zooptools');
 if ($con) {
     $unique = 'zoop'.$a;
     $query = "SELECT * FROM image WHERE unique_id = '$unique'";

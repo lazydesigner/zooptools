@@ -4,7 +4,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
 
-$title = 'Url List Cleaner - Zooptools';
+$title = 'URL List Cleaner Tool - Zooptools';
 // $description = 'Use our Free Online Bulk Image Converter JPG images to PNG format with proper compression methods. Zooptools also have other converter tools. Try them now.';
 
 $canonical = 'url-list-cleaner';
@@ -43,13 +43,16 @@ ob_start();
     .container button:hover{
         color:white
     }
+    ol li {
+        margin: 1% 0;
+    }
 
 
 </style>
 
 <div class="container"><div class="image-container">
     <div class="outer-upload-container">
-    <h1>URLs Cleaner Tool</h1>
+    <h1>URL List Cleaner – Your Ultimate URL Optimization Tool   </h1>
     <textarea id="inputUrls" rows="20" placeholder="Enter URLs separated by a newline..."></textarea>
     <button onclick="extractDomainNames()">Trim To Root</button>
     <button onclick="extractDomainAndSubdirectories()">Trip To Subfolder</button>
@@ -60,6 +63,25 @@ ob_start();
     <button onclick="addHttps()">Add https://</button> 
     </div>
 </div>
+
+
+<p>URL List Cleaner from ZoopTools is an efficient and flexible solution for managing the URL list without any glitches. This tool is meant to clean up your URLs, make them feel uniform, keep them ready for every project whether you are a developer, a marketer, or an SEO genius.</p>
+
+<p><b>Comprehensive Features</b></p>
+<ol>
+    <li><b>Trim to Root:</b> Extract only the root domain from complex URLs.</li>
+    <small>Example: https://example.com/blog/post → https://example.com</small>
+    <li><b>Trim to Subfolder:</b> Retain only specific subfolder paths for targeted tasks.</li>
+    <li><b>Remove Duplicate URLs:</b> Automatically identify and remove repeated links while keeping the first occurrence.
+    </li>
+    <li><b>Remove Duplicate Domains:</b> Simplify lists by eliminating multiple entries of the same domain. </li>
+    <li><b>Add or Remove Protocols:</b></li>
+    <small>Remove http://, https://, http://www., or https://www. from URLs.</small><br>
+    <small>Add secure https:// or customizable http://www. as needed.</small>
+    <li><b>Add or Remove Trailing Slash:</b> Flexibly include or remove the trailing "/" at the end of URLs to match your formatting standards.</li>
+    <li><b>Control 'www':</b> Add or remove "www" for consistent URL presentation.</li>
+</ol>
+
 </div>
 
 <?php

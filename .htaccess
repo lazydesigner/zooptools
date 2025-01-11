@@ -24,6 +24,7 @@ Options -Indexes
 
 RewriteRule ^$ pages/home.php [NC,L]
 RewriteRule ^about-us$ pages/about.php [NC,L]
+RewriteRule ^contact-us$ pages/contact.php [NC,L]
 RewriteRule ^privacy-policy$ pages/privacy-policy.php [NC,L]
 RewriteRule ^terms-and-conditions$ pages/terms-and-condition.php [NC,L]
 
@@ -39,6 +40,7 @@ RewriteRule ^image-compressor$ tools/image-tools/image-compressor.php [NC,L]
 RewriteRule ^crop-image$ tools/image-tools/crop-image.php [NC,L]
 RewriteRule ^watermark-image$ tools/image-tools/watermark-image.php [NC,L] 
 RewriteRule ^resize-image$ tools/image-tools/image-resize.php [NC,L] 
+RewriteRule ^gio-tagging$ tools/image-tools/giotagging.php [NC,L] 
 # Image Tools Url
 
 #Other Tools URL
@@ -65,6 +67,7 @@ RewriteRule ^compound-interest-calculator$ tools/calculator-tools/ci-calculator.
 RewriteRule ^extraction$ backend/othertask/content-download.php [NC,L]
 RewriteRule ^extractcolor$ backend/extractcolor.php [NC,L]
 RewriteRule ^crop-process$ backend/imagetask/crop-image.php [NC,L]
+RewriteRule ^geotag$ backend/imagetask/geotag.php [NC,L]
 RewriteRule ^flipimage$ backend/imagetask/flip-image.php [NC,L]
 RewriteRule ^resize-image-process$ backend/imagetask/resize-image.php [NC,L]
 RewriteRule ^convert-image$ backend/imagetask/image-conversion.php [NC,L]

@@ -3,6 +3,8 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 $canonical = 'compound-interest-calculator';
+$title = 'Compound Interest Calculator - Monthly, Quarterly, Yearly';
+$description = 'Try our Free online Compound Interest Calculator helpful for your saving and investment calculations. See the power of compounding in just a few steps with accurate data.';
 ob_start(); ?>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
@@ -100,8 +102,8 @@ ob_start();
       const interestEarned = principal * (Math.pow(1 + interestRate / 100, time) - 1);
       const totalAmount = principal + interestEarned;
 
-      document.getElementById('total-amount').textContent = `Total Amount: $${totalAmount.toFixed(2)}`;
-      document.getElementById('interest-earned').textContent = `Interest Earned: $${interestEarned.toFixed(2)}`;
+      document.getElementById('total-amount').textContent = `Total Amount: Rs${totalAmount.toFixed(2)}`;
+      document.getElementById('interest-earned').textContent = `Interest Earned: Rs${interestEarned.toFixed(2)}`;
 
       // Chart.js
       const ctx = document.getElementById('chart').getContext('2d');
@@ -110,7 +112,7 @@ ob_start();
         data: {
           labels: ['Principal', 'Interest Earned'],
           datasets: [{
-            label: 'Amount ($)',
+            label: 'Amount (Rs)',
             data: [principal, interestEarned],
             backgroundColor: [
               'rgba(54, 162, 235, 0.7)',

@@ -10,6 +10,7 @@ $title = 'Terms And Condition - Zooptools';
 
 
 $style = '';
+$toextra = true;
 
 ob_start();
 ?> 
