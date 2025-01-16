@@ -35,7 +35,7 @@ RewriteRule ^jpg-to-png$ tools/image-tools/jpg-to-png.php [NC,L]
 RewriteRule ^jpg-to-webp$ tools/image-tools/jpg-to-webp.php [NC,L]
 RewriteRule ^webp-to-jpg$ tools/image-tools/webp-to-jpg.php [NC,L]
 RewriteRule ^webp-to-png$ tools/image-tools/webp-to-png.php [NC,L]
-RewriteRule ^flip-image$ tools/image-tools/flip-image.php [NC,L]
+RewriteRule ^rotate-image-online$ tools/image-tools/flip-image.php [NC,L]
 RewriteRule ^image-compressor$ tools/image-tools/image-compressor.php [NC,L]
 RewriteRule ^crop-image$ tools/image-tools/crop-image.php [NC,L]
 RewriteRule ^watermark-image$ tools/image-tools/watermark-image.php [NC,L] 
@@ -59,6 +59,11 @@ RewriteRule ^dummy-content-generator$ tools/generator-tools/dummy-content-genera
 RewriteRule ^ppf-calculator$ tools/calculator-tools/ppf-calculator.php [NC,L]
 RewriteRule ^sip-calculator$ tools/calculator-tools/sip-calculator.php [NC,L]
 RewriteRule ^compound-interest-calculator$ tools/calculator-tools/ci-calculator.php [NC,L]
+RewriteRule ^age-calculator$ tools/calculator-tools/age-calculator.php [NC,L]
+RewriteRule ^year/([0-9]+)$ tools/calculator-tools/age.php?year=$1 [NC,L]
+RewriteRule ^time-calculator$ tools/calculator-tools/time-calculator.php [NC,L]
+RewriteRule ^time-calculator/([a-z0-9\-]+)$ tools/calculator-tools/time-calculator.php?time_range=$1 [NC,L]
+
 #Calculator Tools URL
 
 

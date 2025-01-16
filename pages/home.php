@@ -110,13 +110,13 @@ ob_start(); ?>
         </div>
         <div class="grid-item">
             <div class="tool-o">
-                <a href="<?= base_url() ?>flip-image">
+                <a href="<?= base_url() ?>rotate-image-online ">
                     <div class="tool">
                         
                         <div class="tool-img">
                             <?= $flip ?>
                         </div>
-                        <p>Flip Image</p>
+                        <p>Rotate Image</p>
                         <small>ZoopTools: Simplifying digital tasks for everyone</small>
                     </div>
                 </a>

@@ -117,7 +117,7 @@ ob_start();
     <div class="zooptools_conversion" id="zooptools_conversion">
         <div class="image-container">
             <div class="outer-upload-container">
-            <h1>Add Watermark to Images For Free- Best Online Watermarking Tool</h1>
+            <h1>Add Watermark to Images For Free </h1>
             <p>Easily protect and increase the significance of your visual content in a few steps. Watermarking of Zooptools offers the image tool which lets you personalize the watermarked content by adding text, logos, or shapes to your photos, thus ensuring that they remain yours alone.</p>
                 <div class="upload-container" id="drag-and_drop_image">
                     <div class="drop-area">

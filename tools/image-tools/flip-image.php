@@ -4,6 +4,9 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
     $canonical = 'flip-image';
 
+    $title = 'Rotate Image Online | Easy-to-Use Image Rotator Tool - ZoopTools';
+    $description = 'Rotate your images online for free with ZoopTools. Quickly adjust image orientation in 90° increments or flip vertically and horizontally. ';
+
 
 ob_start();
 ?>
@@ -103,7 +106,7 @@ ob_start();
         }
     </style>
     <div class="" style="max-width: 60%;margin:3% auto">
-        <h1 style="text-align: center;">Flip Your Image</h1>
+        <h1 style="text-align: center;">Flip Your Image Online</h1>
         <!-- <form id="uploadForm" enctype="multipart/form-data"> -->
         <div class="upload-container" id="drag-and_drop_image">
             <div class="drop-area">
@@ -132,6 +135,8 @@ ob_start();
         <!-- </form> -->
 
     </div>
+    <h2 style="text-align: center;">Rotate Image Online for Free - Horizontal and Vertical Flip Image Online Tool</h2>
+    <p style="text-align: center;">Need to fix the orientation of your image? It is ZoopTools' Rotate Image Tool that you can use every time. Be it the image that is sideways, upside down, or just only needs some small changes; our tool-free online tool enables you to do the rotation quickly and easily.</p>
 </div>
 <?php
 $tool_container = ob_get_clean();

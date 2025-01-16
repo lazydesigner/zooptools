@@ -29,7 +29,7 @@
                         <a href="<?= base_url('website-image-extractor') ?>">Website Image Extractor</a>
                         <a href="<?= base_url('watermark-image') ?>">Watermark Image</a> 
                         <a href="<?= base_url() ?>resize-image">Resize Image</a>
-                        <a href="<?= base_url() ?>flip-image">Flip Image</a>
+                        <a href="<?= base_url() ?>rotate-image-online">Rotate Image</a>
                         <a href="<?= base_url() ?>whats-my-ip">Whats My IP</a>
                         <a href="<?= base_url() ?>bulk-url-opner">Bulk Url Opner</a>
                         <a href="<?= base_url() ?>url-list-cleaner">Url List Cleaner</a>
