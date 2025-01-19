@@ -255,6 +255,39 @@ ob_start();
             z-index: 1;
             /* Place main text in front */
         }
+
+        .faq-container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.faq-question {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #f1f1f1;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #e2e6ea;
+}
+
+.faq-answer {
+    padding: 10px 15px;
+    display: none;
+    color: #495057;
+}
     </style>
     <div class="container">
 
@@ -298,16 +331,23 @@ ob_start();
             <li><b>SEO Professionals:</b> Analyze on-page content to optimize your own websites.</li>
             <li><b>Content Creators:</b> Gather data for competitor analysis or idea generation.</li>
         </ul>
-
+   
+        <div class="faq-container">
         <h3>FAQs About the Website Text Extractor</h3>
-        <p><strong>Q: What can be extracted using the tool? </strong></p>
-        <p><b>A:</b>The main body content of a webpage is extracted while the tool excludes ads, headers, and sidebars.</p>
-
-        <p><b>Q: Can the tool extract any number of times? </b></p>
-        <p><b>A:</b>No, you can use the tool as many times as you like, completely free of charge.</p>
-
-        <p><b>Q: Would this be effective on all sites? </b></p>
-        <p><b>A:</b> Our tool works on most of the publicly accessible web pages. We can not access content that requires any password or sign-up or login. </p>
+        <div class="faq-item">
+            <div class="faq-question">What can be extracted using the tool? </div>
+            <div class="faq-answer">The main body content of a webpage is extracted while the tool excludes ads, headers, and sidebars.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can the tool extract any number of times?</div>
+            <div class="faq-answer">No, you can use the tool as many times as you like, completely free of charge.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Would this be effective on all sites? </div>
+            <div class="faq-answer"> Our tool works on most of the publicly accessible web pages. We can not access content that requires any password or sign-up or login.</div>
+        </div>
+    </div>
+   
     </div>
     <div class="container">
         <div class="content-gap" style="padding: 3% 0;">
@@ -377,6 +417,24 @@ ob_start(); ?>
                 }
             })
     })
+
+
+    // Select all FAQ questions
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+
+        // Toggle the display of the answer
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
+});
+
 </script>
 
 <?php

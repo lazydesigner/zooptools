@@ -154,6 +154,8 @@
     $randomSelections = getRandomSelections($permutations, 21);
     // ================================================
 
+    // print_r($permutations);
+
 
     ?>
     <style>

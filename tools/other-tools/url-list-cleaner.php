@@ -129,17 +129,25 @@ ob_start(); ?>
         }
 
         function removeDuplicateDomains() {
-            const urls = getUrls();
-            const domains = urls.map(url => {
-                try {
-                    return new URL(url).hostname.replace(/^www\./, '');
-                } catch {
-                    return '';
-                }
-            }).filter(Boolean);
-            const uniqueDomains = [...new Set(domains)];
-            displayOutput(uniqueDomains);
+    const urls = getUrls(); // Assume this function fetches the list of URLs
+
+    const seenDomains = new Set();
+    const uniqueUrls = urls.filter(url => {
+        try {
+            const domain = new URL(url).hostname.replace(/^www\./, ''); // Extract domain without 'www.'
+            if (seenDomains.has(domain)) {
+                return false; // Skip if the domain has already been seen
+            }
+            seenDomains.add(domain); // Mark the domain as seen
+            return true; // Keep this URL
+        } catch (error) {
+            console.error(`Invalid URL skipped: ${url}`, error);
+            return false; // Skip invalid URLs
         }
+    });
+
+    displayOutput(uniqueUrls);
+}
 
         function removeHttp() {
             const urls = getUrls();
