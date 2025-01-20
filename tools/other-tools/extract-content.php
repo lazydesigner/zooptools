@@ -276,7 +276,10 @@ ob_start();
         }
 
         .faq-question {
-            padding: 15px;
+            padding:5px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-weight: bold;
             cursor: pointer;
             background: #f1f1f1;
@@ -293,6 +296,7 @@ ob_start();
             display: none;
             color: #495057;
         }
+        #minus{display: block;}
     </style>
     <div class="container">
 
@@ -340,15 +344,15 @@ ob_start();
         <div class="faq-container">
             <h3>FAQs About the Website Text Extractor</h3>
             <div class="faq-item">
-                <div class="faq-question">What can be extracted using the tool? </div>
+                <div class="faq-question"><p>What can be extracted using the tool?</p> <span id="minus">+</span></div>
                 <div class="faq-answer">The main body content of a webpage is extracted while the tool excludes ads, headers, and sidebars.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Can the tool extract any number of times?</div>
+                <div class="faq-question"><p>Can the tool extract any number of times?</p><span id="minus">+</span></div>
                 <div class="faq-answer">No, you can use the tool as many times as you like, completely free of charge.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Would this be effective on all sites? </div>
+                <div class="faq-question"><p>Would this be effective on all sites?</p><span id="minus">+</span> </div>
                 <div class="faq-answer"> Our tool works on most of the publicly accessible web pages. We can not access content that requires any password or sign-up or login.</div>
             </div>
         </div>
@@ -434,8 +438,10 @@ ob_start();
                 // Toggle the display of the answer
                 if (answer.style.display === 'block') {
                     answer.style.display = 'none';
+                    answer.getElementById('minus').innerText = '+';
                 } else {
                     answer.style.display = 'block';
+                    answer.getElementById('minus').innerText = '-';
                 }
             });
         });

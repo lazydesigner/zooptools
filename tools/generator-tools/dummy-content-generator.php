@@ -4,7 +4,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
 $title = 'Lorem Ipsum: Dummy Content Generator - Zooptools';
-$description = 'Generate dummy content for your website';
+$description = 'content for your website';
 $canonical = 'dummy-content-generator';
 
 $style = '';

@@ -273,7 +273,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
         <div class="container">
         <div class="content-gap" style="padding: 3% 0;">
             <div class="text-container">
-                <h2 class="shadow-text">Why Choose ZoopTools?</h2>
+                <h3 class="shadow-text">Why Choose ZoopTools?</h3>
                 <span class="main-text">Why Choose ZoopTools?</span>
             </div>
             <p style="text-align:center">Your One-Stop Solution for Smart and Simple Web Tools!</p>
@@ -309,7 +309,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
         <div class="content-gap" style="padding: 3% 0;">
 
             <div class="text-container">
-                <h2 style=" text-align:center;margin-bottom:0" class="shadow-text">How It Works Section</h2>
+                <h3 style=" text-align:center;margin-bottom:0" class="shadow-text">How It Works Section</h3>
                 <span class="main-text">How It Works Section</span>
             </div>
             <p style="text-align: center;margin:4px">Using ZoopTools is as Easy as 1-2-3!</p>
@@ -339,7 +339,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 
     <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">What Our Users Say</h2>
+            <h3 class="section-title">What Our Users Say</h3>
             <p class="section-subtitle">See how ZoopTools has helped users simplify their digital tasks!</p>
 
             <div class="testimonial-cards">

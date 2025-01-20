@@ -19,7 +19,7 @@ ob_start();
     }
 
     .outer-upload-container {
-        width: 500px;
+        max-width: 500px;
     }
     .grid{
         width: 100%;
