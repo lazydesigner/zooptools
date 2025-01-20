@@ -6,7 +6,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 include_once '../../inc/icons.php';
 
 $canonical = 'website-image-extractor';
-$title = 'Free Website Image Extractor | Extract & Download Images Online - ZoopTools';
+$title = 'Free Website Image Extractor | Extract & Download Images Online';
 $description = 'Extract and download images from any URL with ZoopTools Website Image Extractor. No sign-up or extensions required. Get all images instantly for free!';
 $style = '';
 $toextra = true;

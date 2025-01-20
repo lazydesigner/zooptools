@@ -247,7 +247,7 @@ ob_start();
     </p>
     <p><b>Future Value:</b> Once you key in all that is required, the calculator will automatically show the maturity value of your investment. This number is the total payment you will receive on your investment by the end of the term along with the earned interest.</p>
     <p>These steps will help you easily calculate how fast your PPF investment will grow and subsequently plan well for the necessary financial goal. The calculator is quick and accurate, thus it will aid you to remain consistent with your long-term savings plan.</p>
-    <h2>Facts About PPF</h2>
+    <h3>Facts About PPF</h3>
     <ul>
         <li>Current interest rate : 7.10%</li>
         <li>Duration of scheme : 15 years</li>

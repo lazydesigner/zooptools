@@ -3,7 +3,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
 : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
-$title = 'Free Image Cropper – Crop Images Online in Seconds | Zooptools';
+$title = 'Free Image Cropper – Crop Images Online in Seconds';
 $description = 'Smoothly crop images online with Zooptools free image cropper. Quickly adjust images to perfect size and aspect ratio. Try Now!';
 $canonical = 'crop-image';
 

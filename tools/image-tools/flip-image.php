@@ -2,9 +2,9 @@
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
-    $canonical = 'flip-image';
+    $canonical = 'rotate-image-online';
 
-    $title = 'Rotate Image Online | Easy-to-Use Image Rotator Tool - ZoopTools';
+    $title = 'Rotate Image Online | Easy-to-Use Image Rotator Tool';
     $description = 'Rotate your images online for free with ZoopTools. Quickly adjust image orientation in 90° increments or flip vertically and horizontally. ';
 
 

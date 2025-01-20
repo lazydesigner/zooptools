@@ -78,7 +78,7 @@ ob_start();
     </div>
 
     <div class="results mt-4">
-        <h4>Results</h4>
+        <div>Results</div>
         <p>Investment Amount: ₹<span id="investmentAmount">0</span></p>
         <p>Estimated Returns: ₹<span id="estimatedReturns">0</span></p>
         <p>Total Amount: ₹<span id="totalAmount">0</span></p>

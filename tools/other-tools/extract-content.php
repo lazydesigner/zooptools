@@ -8,7 +8,7 @@ include_once '../../inc/icons.php';
 
 $canonical = 'web-content-extractor';
 
-$title = 'Free Website Text Extractor | Extract & Download Content Online - ZoopTools';
+$title = 'Free Website Text Extractor | Extract & Download Content Online';
 $description = "Easily extract body content from any URL with ZoopTools' Website Text Extractor. No sign-up, no extensions required. Download text files instantly for free!";
 
 $style = '';

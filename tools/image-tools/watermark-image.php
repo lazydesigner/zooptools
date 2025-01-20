@@ -211,7 +211,7 @@ ob_start();
     <h2 >What is the Purpose of Watermarking?</h2>
     <p >Watermarks safeguard your intellectual property, act as a warning against unauthorized use, and are a promotional tool for your brand. The act of adding a watermark to your image adds a professional touch to your visuals and simultaneously affirms your rights.</p>
 
-    <h3 >Characteristics:</h3>
+    <div>Characteristics:</div>
     <ul>
         <li>Customizable Watermarks: You can put your text, logo, or shape where you want to and customize the size, transparency, color, and placement of the watermarks. </li>
         <li>Convenience: You can insert your image directly, or through the URL, Dropbox, or Google Drive.</li>
