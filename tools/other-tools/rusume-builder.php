@@ -11,7 +11,7 @@ ob_start(); ?>
 
 ob_start();
 ?>
-<div style="max-width:60% ;margin:1% auto">
+<div style="max-width:800px ;margin:1% auto;padding:2%">
  <section id = "about-sc" class = "">
             <div class = "containersss">
                 <div class = "about-cnt">

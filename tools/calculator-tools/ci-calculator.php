@@ -90,7 +90,7 @@ $style = ob_get_clean();
 ob_start();
 ?>
 
-<div class="" style="max-width: 60%;margin:5% auto">
+<div class="" style="max-width: 800px; margin:5% auto;padding:2%">
   <div class="grey darken-4 white-text center-align">
     <h1>Compound Interest Calculator</h1>
   </div>

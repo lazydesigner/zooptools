@@ -37,7 +37,7 @@ $style = ob_get_clean();
 
 ob_start();
 ?>
-<div class="" style="max-width: 60%;margin:5% auto">
+<div class="" style="max-width: 800px;margin:5% auto;padding:2%">
     <h2 class="text-center">SIP & Lumpsum Calculator</h2>
 
     <div class="tab-container my-3">

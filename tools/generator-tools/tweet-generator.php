@@ -17,7 +17,7 @@ ob_start(); ?>
 
 ob_start();
 ?>
-<div class="" style="max-width:60%; margin: auto;">
+<div class="" style="max-width:800; margin: auto;padding:2%">
 <main>
       <div class="form">
         <h2>Details</h2>

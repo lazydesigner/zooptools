@@ -879,10 +879,16 @@ a {
         display: grid !important;
         transition: 1s;
     }
+    .shadow-text{display: none;}
 
     .nav-link {
         width: 100%;
+        height: auto;
         padding: 10px 5px;
+    }
+
+    .nav-link .dropdown{
+        position: relative;
     }
 
     .togglemenu {

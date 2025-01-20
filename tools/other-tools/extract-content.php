@@ -1,7 +1,7 @@
-<?php 
+<?php
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
-? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
-: $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+    ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
+    : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
 
 include_once '../../inc/icons.php';
@@ -15,7 +15,8 @@ $style = '';
 
 ob_start();
 ?>
- <div style="text-align: center;"><h1>🔍 Website Text Extractor</h1> 
+<div style="text-align: center;">
+    <h1>🔍 Website Text Extractor</h1>
     <div class="zooptools_conversion">
         <div class="extract_url">
             <div class="inner_extract_url">
@@ -218,7 +219,11 @@ ob_start();
             .how-boxx {
                 flex: 100%;
             }
-            .how-box svg{color:#FF6600!important; background-color: #FF6600!important;}
+
+            .how-box svg {
+                color: #FF6600 !important;
+                background-color: #FF6600 !important;
+            }
 
             .how-box::after {
                 display: none;
@@ -257,37 +262,37 @@ ob_start();
         }
 
         .faq-container {
-    max-width: 100%;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+            max-width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.faq-item {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #e9ecef;
-}
+        .faq-item {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e9ecef;
+        }
 
-.faq-question {
-    padding: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    background: #f1f1f1;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
+        .faq-question {
+            padding: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
 
-.faq-question:hover {
-    background: #e2e6ea;
-}
+        .faq-question:hover {
+            background: #e2e6ea;
+        }
 
-.faq-answer {
-    padding: 10px 15px;
-    display: none;
-    color: #495057;
-}
+        .faq-answer {
+            padding: 10px 15px;
+            display: none;
+            color: #495057;
+        }
     </style>
     <div class="container">
 
@@ -331,23 +336,23 @@ ob_start();
             <li><b>SEO Professionals:</b> Analyze on-page content to optimize your own websites.</li>
             <li><b>Content Creators:</b> Gather data for competitor analysis or idea generation.</li>
         </ul>
-   
+
         <div class="faq-container">
-        <h3>FAQs About the Website Text Extractor</h3>
-        <div class="faq-item">
-            <div class="faq-question">What can be extracted using the tool? </div>
-            <div class="faq-answer">The main body content of a webpage is extracted while the tool excludes ads, headers, and sidebars.</div>
+            <h3>FAQs About the Website Text Extractor</h3>
+            <div class="faq-item">
+                <div class="faq-question">What can be extracted using the tool? </div>
+                <div class="faq-answer">The main body content of a webpage is extracted while the tool excludes ads, headers, and sidebars.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can the tool extract any number of times?</div>
+                <div class="faq-answer">No, you can use the tool as many times as you like, completely free of charge.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Would this be effective on all sites? </div>
+                <div class="faq-answer"> Our tool works on most of the publicly accessible web pages. We can not access content that requires any password or sign-up or login.</div>
+            </div>
         </div>
-        <div class="faq-item">
-            <div class="faq-question">Can the tool extract any number of times?</div>
-            <div class="faq-answer">No, you can use the tool as many times as you like, completely free of charge.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Would this be effective on all sites? </div>
-            <div class="faq-answer"> Our tool works on most of the publicly accessible web pages. We can not access content that requires any password or sign-up or login.</div>
-        </div>
-    </div>
-   
+
     </div>
     <div class="container">
         <div class="content-gap" style="padding: 3% 0;">
@@ -388,58 +393,57 @@ ob_start();
 
 
 
-<?php
-$tool_container = ob_get_clean(); 
-ob_start(); ?>
+    <?php
+    $tool_container = ob_get_clean();
+    ob_start(); ?>
 
-<script>
-    const extract_btn = document.querySelector('#extract_btn');
-    extract_btn.addEventListener('click', () => {
-        document.getElementById('extract_btn').innerText = "Processing...";
-        const url = new FormData();
-        url.append('url', document.querySelector('#url').value);
-        url.append('task', 'content');
-        fetch('<?= base_url() ?>extraction', {
-                method: 'post',
-                body: url
-            }).then(response => response.json())
-            .then(data => { 
-                if (data['status'] == 200) {
-                    document.getElementById('extract_btn').innerText = "Extract";
-                    document.getElementById('result').style.display = 'block';
-                    document.getElementById('filename').innerHTML = '<b>' + data['a']['textFile'] + '</b>';
-                    document.getElementById('linkbtn').innerHTML = '<b>' + data['a']['textFile'] + '</b>';
-                    document.getElementById('forbtn').innerHTML = '<a href="<?=base_url() ?>downloads/converted_images/' + data['a']['textFile'] + '" download><button>Download</button></a>';
-                    // console.log(data['a']['textFile'])
+    <script>
+        const extract_btn = document.querySelector('#extract_btn');
+        extract_btn.addEventListener('click', () => {
+            document.getElementById('extract_btn').innerText = "Processing...";
+            const url = new FormData();
+            url.append('url', document.querySelector('#url').value);
+            url.append('task', 'content');
+            fetch('<?= base_url() ?>extraction', {
+                    method: 'post',
+                    body: url
+                }).then(response => response.json())
+                .then(data => {
+                    if (data['status'] == 200) {
+                        document.getElementById('extract_btn').innerText = "Extract";
+                        document.getElementById('result').style.display = 'block';
+                        document.getElementById('filename').innerHTML = '<b>' + data['a']['textFile'] + '</b>';
+                        document.getElementById('linkbtn').innerHTML = '<b>' + data['a']['textFile'] + '</b>';
+                        document.getElementById('forbtn').innerHTML = '<a href="<?= base_url() ?>downloads/converted_images/' + data['a']['textFile'] + '" download><button>Download</button></a>';
+                        // console.log(data['a']['textFile'])
+                    } else {
+                        document.getElementById('extract_btn').innerText = "Extract";
+                        alert('Url Is not Valid or Website is not Working')
+                    }
+                })
+        })
+
+
+        // Select all FAQ questions
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+
+                // Toggle the display of the answer
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
                 } else {
-                    document.getElementById('extract_btn').innerText = "Extract";
-                    alert('Url Is not Valid or Website is not Working')
+                    answer.style.display = 'block';
                 }
-            })
-    })
+            });
+        });
+    </script>
 
-
-    // Select all FAQ questions
-const faqQuestions = document.querySelectorAll('.faq-question');
-
-faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-
-        // Toggle the display of the answer
-        if (answer.style.display === 'block') {
-            answer.style.display = 'none';
-        } else {
-            answer.style.display = 'block';
-        }
-    });
-});
-
-</script>
-
-<?php
-$script = ob_get_clean();
-include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/inc/base.php')
-    ? $_SERVER['DOCUMENT_ROOT'] . '/inc/base.php'
-    : $_SERVER['DOCUMENT_ROOT'] . '/zoop/inc/base.php';
-?>
+    <?php
+    $script = ob_get_clean();
+    include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/inc/base.php')
+        ? $_SERVER['DOCUMENT_ROOT'] . '/inc/base.php'
+        : $_SERVER['DOCUMENT_ROOT'] . '/zoop/inc/base.php';
+    ?>

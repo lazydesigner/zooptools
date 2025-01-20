@@ -150,7 +150,7 @@ ob_start(); ?>
 ob_start();
 ?>
 
-<div style="max-width: 60%;margin:auto">
+<div style="max-width: 800px;margin:auto;padding:2%">
 <h1 class="center-align">Calculate Your PPF Returns Instantly</h1>
     <div class="ppf">
     <div class="ppf-body">
@@ -186,21 +186,21 @@ ob_start();
             </div>
         </div>
         <div class="ppf-graph">
-        <canvas id="ppfChart" width="200" height="150"></canvas>
+            <canvas id="ppfChart" width="200" height="150"></canvas>
         </div>
     </div>
     <div class="ppf-result">
         <div class="investement-box">
             <small>Invested Amount</small>
-            <p style="font-weight: bolder;font-size:1.3rem">₹<span id="investedAmount">0</span></p>
+            <p style="font-weight: bolder;font-size:1.2rem">₹<span id="investedAmount">0</span></p>
         </div>
         <div class="interest-box investement-box">
             <small>Total Interest</small>
-            <p style="font-weight: bolder;font-size:1.3rem">₹<span id="totalInterest">0</span></p>
+            <p style="font-weight: bolder;font-size:1.2rem">₹<span id="totalInterest">0</span></p>
         </div>
         <div class="maturity-box investement-box">
             <small>Maturity Amount</small>
-            <p style="font-weight: bolder;font-size:1.3rem">₹<span id="maturityValue">0</span></p>
+            <p style="font-weight: bolder;font-size:1.2rem">₹<span id="maturityValue">0</span></p>
         </div>
     </div>
     </div>

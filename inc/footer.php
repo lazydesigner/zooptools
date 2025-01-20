@@ -52,7 +52,7 @@
     <div class="footer-column">
       <p>Contact Us</p>
       <ul>
-        <li>Email: <a href="mailto:support@zooptols.com">support@zooptools.com</a></li>
+        <li>Email: <a href="mailto:info@zooptols.com">info@zooptools.com</a></li>
         <!-- <li>Phone: <a href="tel:+0000000000">+1 234 567 890</a></li> -->
         <li>Social Links:</li>
         <ul class="social-links">
