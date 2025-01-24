@@ -46,12 +46,12 @@ ob_start();
                                     </div>
                                     <div class = "form-elem">
                                         <label for = "" class = "form-label">Designation</label>
-                                        <input name = "designation" type = "text" class = "form-control designation" id = "" onkeyup="generateCV()" placeholder="e.g. Software Enginner">
+                                        <input name = "designation" type = "text" class = "form-control designation" id = "" onkeyup="generateCV()" placeholder="e.g. Sales Executive">
                                         <span class="form-text"></span>
                                     </div>
                                     <div class = "form-elem">
                                         <label for = "" class = "form-label">Address</label>
-                                        <input name = "address" type = "text" class = "form-control address" id = "" onkeyup="generateCV()" placeholder="e.g. Barra, Kanpur">
+                                        <input name = "address" type = "text" class = "form-control address" id = "" onkeyup="generateCV()" placeholder="e.g. Texas, USA">
                                         <span class="form-text"></span>
                                     </div>
                                 </div>
