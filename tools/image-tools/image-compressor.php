@@ -99,7 +99,7 @@ ob_start(); ?>
     </div>
     <div class="image-container">
         <div class="outer-upload-container">
-            <h1 style="text-align: center;">Convert Your Image</h1>
+            <h1 style="text-align: center;">Compress Your Image</h1>
             <div class="upload-container" id="drag-and_drop_image">
                 <div class="drop-area">
                     <div class="drop-text">

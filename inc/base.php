@@ -44,7 +44,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     <meta name="twitter:description" content="<?php echo $description ?? 'Find Out Latest Tools that will make your life easy. All kind of  tools are available for you day to day life' ?>">
     <meta name="twitter:image" content="https://zooptools.com/assets/images/logo.png">
     <meta name="twitter:card" content="summary_large_image">
-
+    <meta name="google-site-verification" content="M8otC53C0OalMEEf9zOAUbFDwBJu0qSM66pWbiPtVBM" />
     <!-- Favicon: Adds a small icon in browser tab -->
     <link rel="icon" href="<?= base_url() ?>assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/base.css">
@@ -60,6 +60,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     </script>
 
     <?php echo $style ?? ''; ?>
+    
 
 </head>
 
