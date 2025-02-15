@@ -35,14 +35,14 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     <!-- Open Graph Tags: Optimizes content for social sharing -->
     <meta property="og:title" content="<?php echo $title ?? 'Best Tool Website to make your life easy' ?>">
     <meta property="og:description" content="<?php echo $description ?? 'Find Out Latest Tools that will make your life easy. All kind of  tools are available for you day to day life' ?>">
-    <meta property="og:image" content="https://zooptools.com/assets/images/logo.png">
+    <meta property="og:image" content="https://zooptools.net/assets/images/logo.png">
     <meta property="og:url" content="<?= base_url() ?>">
     <meta property="og:type" content="article">
 
     <!-- Twitter Card Tags: Optimizes content for Twitter -->
     <meta name="twitter:title" content="<?php echo $title ?? 'Best Tool Website to make your life easy' ?>">
     <meta name="twitter:description" content="<?php echo $description ?? 'Find Out Latest Tools that will make your life easy. All kind of  tools are available for you day to day life' ?>">
-    <meta name="twitter:image" content="https://zooptools.com/assets/images/logo.png">
+    <meta name="twitter:image" content="https://zooptools.net/assets/images/logo.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="M8otC53C0OalMEEf9zOAUbFDwBJu0qSM66pWbiPtVBM" />
     <!-- Favicon: Adds a small icon in browser tab -->
@@ -55,7 +55,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
             "@type": "WebPage",
             "name": "Best Tool Website to make your life easy",
             "description": "Find Out Latest Tools that will make your life easy. All kind of  tools are available for you day to day life",
-            "url": "https://zooptools.com"
+            "url": "https://zooptools.net"
         }
     </script>
 
