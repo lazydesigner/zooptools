@@ -2,6 +2,9 @@
 include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
     ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
     : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
+
+    $title = 'Free Image Resizer - Resize Photos Online Instantly';
+    $description = "Resize images for free with ZoopTools' Image Resizer. Optimize photos for social media, websites, and more. No signups, no fees – try it now!";
     $canonical = 'resize-image';
 ob_start(); ?>
 <style>
@@ -113,7 +116,7 @@ ob_start();
 ?>
 <div class="image-container">
     <div class="outer-upload-container" id="outer-upload-container">
-        <h1 style="text-align: center;">Image Resizing With No Quality Loss</h1>
+        <h1 style="text-align: center;">Image Resizer - Resize Your Images for Free in Seconds</h1>
         <div class="upload-container" id="drag-and_drop_image">
             <div class="drop-area">
                 <div class="drop-text">
@@ -141,6 +144,38 @@ ob_start();
         <button id="reupload">Re-Upload</button></div>
         <br><br>
         <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+
+    <div class="container">
+        <p>Welcome to ZoopTools' Image Resizer, an extremely convenient free tool for making images smaller or larger in a snap. Whether you are a blogger, a designer, or a social media fan, our tool is capable of helping you modify images to be perfect for any platform without sacrificing quality. Resize, compress, and download images in only a few clicks – no software or sign-ups are needed!</p>
+
+        <h2>Perfect For:</h2>
+        <ul>
+            <li><strong>Bloggers:</strong> Resize images to fit your blog layout perfectly.</li>
+            <li><strong>Social Media Users:</strong> Optimize images for Instagram, Facebook, Twitter, and more.</li>
+            <li><strong>Web Designers:</strong> Resize images for websites and apps without losing quality.</li>
+            <li><strong>Photographers:</strong> Quickly adjust the dimensions of the image for their portfolios or client deliveries.</li>
+            <li><strong>E-commerce Sellers:</strong> Resize product images for online stores like Amazon, eBay, or Shopify.
+            </li>
+        </ul>
+
+        <h2>Supported Image Formats</h2>
+        <ul>
+            <li>JPG/JPEG</li>
+            <li>PNG</li>
+            <li>GIF</li>
+            <li>BMP</li>
+            <li>SVG (coming soon)</li>
+        </ul>
+
+        <h2>Example Use Cases</h2>
+        <ul>
+            <li>Social Media Posts: Resize images to fit Instagram (1080x1080), Facebook (1200x630), or Twitter (1200x675).</li>
+            <li>Website Banners: Optimize banner images for your website or blog.</li>
+            <li>Profile Pictures: Resize images for LinkedIn, YouTube, or other platforms.</li>
+            <li>Email Newsletters: Resize images to fit email templates perfectly</li>
+        </ul>
+
     </div>
 
 </div>

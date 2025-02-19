@@ -6,7 +6,7 @@ include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
 
 $title = 'Convert JPG to PNG Online - Free & Easy JPG to PNG Converter';
 $description = 'Use our Free Online Bulk Image Converter JPG images to PNG format with proper compression methods. Zooptools also have other converter tools. Try them now.';
-$canonical = 'jpg-to-png';
+$canonical = 'age-calculator';
 
 $style = '';
 

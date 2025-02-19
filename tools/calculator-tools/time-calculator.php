@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/routes.php')
+    ? $_SERVER['DOCUMENT_ROOT'] . '/routes.php'
+    : $_SERVER['DOCUMENT_ROOT'] . '/zoop/routes.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Difference Calculator</title>
+
+// $title = 'Convert JPG to PNG Online - Free & Easy JPG to PNG Converter';
+// $description = 'Use our Free Online Bulk Image Converter JPG images to PNG format with proper compression methods. Zooptools also have other converter tools. Try them now.';
+$canonical = 'time-calculator';
+
+$style = '';
+
+ob_start();
+?>
     <style>
         .timecontainer {
             max-width: 500px;
@@ -57,9 +64,6 @@
             color: #28a745;
         }
     </style>
-</head>
-
-<body>
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         if (isset($_GET['time_range'])) {
@@ -189,6 +193,7 @@
         }
     </style>
     <?php if (isset($readableStartTime)) {
+        echo '<a href="https://zooptools.net/time-calculator"><button>Back</button></a>';
         echo '<h1>' . $readableStartTime . ' to ' . $readableEndTime . '</h1>';
     } else { ?> <h1>Hours Calculator</h1> <?php } ?>
     <?php if (isset($_GET['time_range'])) { ?>
@@ -278,12 +283,10 @@
             `;
         });
     </script>
-    <?php
-
-
-
-    ?>
-
-</body>
-
-</html>
+    
+<?php
+$tool_container = ob_get_clean();
+include_once file_exists($_SERVER['DOCUMENT_ROOT'] . '/inc/base.php')
+    ? $_SERVER['DOCUMENT_ROOT'] . '/inc/base.php'
+    : $_SERVER['DOCUMENT_ROOT'] . '/zoop/inc/base.php';
+?>
